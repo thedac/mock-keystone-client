@@ -1,0 +1,5 @@
+export OS_AUTH_URL={{id.credentials_protocol()}}://{{id.credentials_host()}}:{{id.credentials_port()}}/v{{id.api_version()}}.0
+export OS_TENANT_NAME={{id.credentials_project()}}
+export OS_USERNAME={{id.credentials_username()}}
+export OS_PASSWORD={{id.credentials_password()}}
+export OS_REGION_NAME={{id.region()}}

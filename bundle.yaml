@@ -1,0 +1,11 @@
+series: trusty
+services:
+  mock:
+    charm: mock-keystone-client
+  keystone:
+    branch: git://github.com/openstack/charm-keystone
+  mysql:
+    charm: cs:trusty/mysql
+relations:
+  - ["keystone:identity-credentials", "mock:identity-credentials"]
+  - [keystone, mysql]

@@ -1,0 +1,10 @@
+name: mock-keystone-client
+summary: A Mock keystone client charm
+maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
+description: Mock a keystone client charm that consumes identity-credentials
+categories:
+  - openstack
+subordinate: false
+requires:
+  identity-credentials:
+    interface: keystone-credentials
