@@ -2,6 +2,10 @@ series: trusty
 services:
   mock:
     charm: mock-keystone-client
+    options:
+      project: newproject
+      requested_roles: Member,Admin
+      requested_grants: Member,Admin
   keystone:
     branch: git://github.com/openstack/charm-keystone
   mysql:

@@ -1,0 +1,18 @@
+options:
+  project:
+    default:
+    type: string
+    description: Project name
+  requested_roles:
+    default:
+    type: string
+    description: Comma delimeted list of role names
+  requested_grants:
+    default:
+    type: string
+    description: Comma delimeted list of role grants
+  domain:
+    default:
+    type: string
+    description: Keystone v3 domain
+
